@@ -1,0 +1,103 @@
+
+ .highlights-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .gallery-button {
+    background-color: #005336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gallery-button:hover {
+    background-color: #003823;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: rgb(250, 237, 200)
+  }
+  
+  .image-card {
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .image-card img {
+    /* width: 100%; */
+    height: auto;
+    display: block;
+    /* transition: transform 0.3s ease; */
+  }
+  
+  .image-card:hover img {
+    /* transform: scale(1.05); */
+  }
+  
+  /* Custom Grid Layout */
+  .image-1 {
+    grid-column: span 2;
+  }
+  
+  .image-2, .image-3 {
+    grid-column: span 1;
+  }
+  
+  .image-4 {
+    grid-column: span 1;
+    grid-row: 2;
+    margin-top: -103%;
+  }
+  
+  .image-5 {
+    grid-column: span 2;
+    grid-row: 2;
+    margin-top: -50%;
+  }
+  
+
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .image-1, .image-4, .image-5 {
+      grid-column: span 2;
+    }
+  
+    .image-2, .image-3 {
+      grid-column: span 1;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-card {
+      grid-column: span 1;
+    }
+  }
+  

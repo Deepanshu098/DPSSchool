@@ -1,0 +1,121 @@
+footer {
+    background-color: #004225;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .quick-links, .about, .contact-us {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .quick-links h4, .about h4, .contact-us h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    margin: 5px 0;
+  }
+  
+  .quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .quick-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .about p {
+    font-size: 0.9rem;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+    display: flex;
+   
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    background-color: #fbb400;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .social-icons a:hover {
+    color: #fbb400;
+  }
+  
+  .contact-us{
+    margin-bottom: 50px;
+  }
+
+  .about{
+    margin-bottom: 30px;
+  }
+
+  .contact-us p {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: start;
+  }
+  
+  .contact-us p svg {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    background-color: #fbb400;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #004225;
+    margin-bottom: -35px;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .quick-links, .about, .contact-us {
+      width: 30%;
+      text-align: left;
+    }
+  
+    .quick-links ul {
+      text-align: left;
+    }
+  
+    .about p, .contact-us p {
+      text-align: left;
+    }
+  
+    .social-icons {
+      text-align: left;
+    }
+  }

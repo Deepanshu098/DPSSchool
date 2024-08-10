@@ -1,0 +1,69 @@
+.academy-container {
+    background-color: #f2a900; 
+    padding: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+  
+  .academy-title {
+    color: #000;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .academy-content {
+    display: flex;
+  }
+  
+  .left-section {
+    max-width: 40%;
+  }
+  
+  .left-image {
+    border-radius: 10px;
+  }
+  
+  .right-section {
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:500px;
+  }
+  
+  .academy-text {
+    color: #000;
+    font-size: 1.1rem;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.6;
+    text-align: justify;
+    white-space: normal;
+  }
+  
+  .right-image {
+    width: 100%;
+    max-width: 350px;
+    height: 84%;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .academy-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section,
+    .right-section {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
+  
+    .right-image {
+      align-self: center;
+    }
+  }
+  
